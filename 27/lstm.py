@@ -37,7 +37,7 @@ for index, quotations_link in enumerate(quotations_links):
 xy = [[0]*4 for i in range(100)] # (종가저가고가시가) 저장배열
 
 for i in range(100):
-    num=int(closingPrices[i].replace(',',''))
+    num=int(closingPrices[i].replace(',',' '))
     closingPricesfloat.append(num)
     xy[i][0] = closingPricesfloat[i]
 
